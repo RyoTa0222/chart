@@ -18,20 +18,19 @@ export class Input_data extends Component {
     }
 
 
-    changeData(i){
-        // console.log(i);
-        // this.setState({
-        //     id:i,
-        //     data: this.state.data
-        // });
-        // console.log(this.state.id);
-        // this.refs.onData.value='';
+    changeData(i, value){
+        this.setState({
+            quarter: Number(i+1), 
+            earnings: this.refs.onData.value
+        });
+        console.log(Number(value[i]));
+        this.refs.onData.value='';
         
     }
 
 render(){
     return(
-        <ul>
+        <ul className="input_list">
             {this.state.data.map((data, i) => {
                 return <li key={i} className="change_list">
                     <div className="textarea">
@@ -43,7 +42,10 @@ render(){
                         />
                     </div>
                         <Button color="blue" 
-                                onClick={(event) => this.changeData(event, i)}
+                                onClick={
+                                  //  () => console.log(Number(this.refs.onData.value))
+                                   (event) => this.changeData(event, i)
+                                }
                                 marginLeft={20}>
                         変更
                         </Button>

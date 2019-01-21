@@ -79,7 +79,7 @@ deleteData(value){
             <div>
             <VictoryChart
             domainPadding={40}
-            theme={VictoryTheme.material}    
+            theme={VictoryTheme.material} 
             >
             <VictoryAxis
             tickValues={this.state.data.length}

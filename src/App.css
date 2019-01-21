@@ -1,5 +1,5 @@
 .content{
-  margin: 2rem;
+  margin: 5rem 10rem;
 }
 
 .title {
@@ -18,22 +18,27 @@ border-bottom: solid 2px gray;
   left: -20px;
 }
 
-.VictoryContainer{
- 
-}
-
 .textarea{
   display: inline-block;
 }
 
 .change_list{
   list-style-type: none;
+  margin-top: 1rem;
 }
 .flex_content{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.input_list{
+  padding: 0;
+  text-align: right;
+}
+.textarea{
+  text-align: left;
+}
 .input_container{
-  padding-left: 40px;
+  text-align: right;
 }
