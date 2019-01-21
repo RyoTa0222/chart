@@ -1,0 +1,39 @@
+.content{
+  margin: 2rem;
+}
+
+.title {
+display: block;
+border-bottom: solid 2px gray;
+}
+.title::before{
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: gray;
+  border-radius: 2rem;
+  top: 9px;
+  left: -20px;
+}
+
+.VictoryContainer{
+ 
+}
+
+.textarea{
+  display: inline-block;
+}
+
+.change_list{
+  list-style-type: none;
+}
+.flex_content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.input_container{
+  padding-left: 40px;
+}
